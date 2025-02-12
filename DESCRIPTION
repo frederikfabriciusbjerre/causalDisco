@@ -1,0 +1,59 @@
+Package: causalDisco
+Title: Tools for Causal Discovery on Observational Data
+Version: 0.9.4
+Authors@R: 
+    person(given = "Anne Helby",
+           family = "Petersen",
+           role = c("aut", "cre"),
+           email = "ahpe@sund.ku.dk")
+Description: Various tools for inferring causal models from observational data. The package 
+    includes an implementation of the temporal Peter-Clark (TPC) algorithm. Petersen, Osler 
+    and Ekstrøm (2021) <doi:10.1093/aje/kwab087>. It also includes general tools
+    for evaluating differences in adjacency matrices, which can be used for evaluating
+    performance of causal discovery procedures. 
+Depends: R (>= 3.5.0)
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+URL: https://github.com/annennenne/causalDisco
+BugReports: https://github.com/annennenne/causalDisco/issues
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
+Imports:
+    pcalg,
+    igraph,
+    RColorBrewer,
+    gtools,
+    clipr,
+    methods,
+    scales,
+    Rgraphviz,
+    graph,
+    magick,
+    rmarkdown
+Collate: 
+    'amat.R'
+    'causalDisco-package.R'
+    'compare.R'
+    'confusion.R'
+    'corTest.R'
+    'edges.R'
+    'evaluate.R'
+    'tpc.R'
+    'fci.R'
+    'gausCorScore.R'
+    'maketikz.R'
+    'metrics.R'
+    'misc.R'
+    'nDAGs.R'
+    'pc.R'
+    'plot.R'
+    'plotTempoMech.R'
+    'probmat2amat.R'
+    'regTest.R'
+    'simDAG.R'
+    'simGausFromDAG.R'
+    'tamat.R'
+    'tfci.R'
+    'tges.R'
+    'tplot.R'
